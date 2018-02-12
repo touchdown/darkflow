@@ -90,7 +90,7 @@ def return_predict(self, im):
         if tmpBox is None:
             continue
         boxesInfo.append({
-            "label": tmpBox[4],
+            "id": tmpBox[5],
             "confidence": tmpBox[6],
             "topleft": {
                 "x": tmpBox[0],
